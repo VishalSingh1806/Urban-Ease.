@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Vendor.master.cs" Inherits="Urban_Ease_2.Vendor.Vendor" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="dashboard">
+            <aside>
+                <div class="logo">
+                    <h1>Vendor</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#new-orders"><i class="fas fa-shopping-cart"></i>New Orders</a></li>
+                        <li><a href="#order-history"><i class="fas fa-history"></i>Order History</a></li>
+                        <li><a href="#profile"><i class="fas fa-user"></i>Profile</a></li>
+                        <li><a href="#settings"><i class="fas fa-cog"></i>Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="main-content">
+                <header>
+                    <div class="header-content">
+                        <div class="welcome">
+                            <h2>
+                                <asp:Literal ID="LiteralVendorName" runat="server" Text="Welcome, John Doe"></asp:Literal></h2>
+                            <p>Here's what's happening today.</p>
+                        </div>
+                        
+                            <a class="nav-link" href="../logout.aspx">
+                                <i class="fas fa-sign-out-alt fa-xl"></i>
+                            </a>
+                       
+                    </div>
+                </header>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

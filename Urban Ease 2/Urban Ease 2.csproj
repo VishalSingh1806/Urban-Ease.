@@ -1,0 +1,522 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9839190C-145C-461E-961A-01FBE919D6BE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Urban_Ease_2</RootNamespace>
+    <AssemblyName>Urban Ease 2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="Activate.aspx" />
+    <Content Include="admin\add_partner.aspx" />
+    <Content Include="admin\add_services.aspx" />
+    <Content Include="admin\assets\css\bootstrap.min.css" />
+    <Content Include="admin\assets\css\now-ui-dashboard.css" />
+    <Content Include="admin\assets\css\now-ui-dashboard.min.css" />
+    <Content Include="admin\assets\demo\demo.css" />
+    <Content Include="admin\assets\demo\demo.js" />
+    <Content Include="admin\assets\img\apple-icon.png" />
+    <Content Include="admin\assets\img\bg5.jpg" />
+    <Content Include="admin\assets\img\default-avatar.png" />
+    <Content Include="admin\assets\img\favicon.png" />
+    <Content Include="admin\assets\img\header.jpg" />
+    <Content Include="admin\assets\img\mike.jpg" />
+    <Content Include="admin\assets\img\now-logo.png" />
+    <Content Include="admin\assets\img\now-ui-dashboard.gif" />
+    <Content Include="admin\assets\js\core\bootstrap.min.js" />
+    <Content Include="admin\assets\js\core\jquery.min.js" />
+    <Content Include="admin\assets\js\core\popper.min.js" />
+    <Content Include="admin\assets\js\now-ui-dashboard.js" />
+    <Content Include="admin\assets\js\now-ui-dashboard.min.js" />
+    <Content Include="admin\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="admin\assets\js\plugins\chartjs.min.js" />
+    <Content Include="admin\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="admin\dashboard.aspx" />
+    <Content Include="blog.aspx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="cleaning.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="CSS\tiny-slider.css" />
+    <Content Include="decor.aspx" />
+    <Content Include="images\profile.png" />
+    <Content Include="images\promiss.jpg" />
+    <Content Include="images\shopping-cart-pn.png" />
+    <Content Include="repair.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\ac_repair.png" />
+    <Content Include="images\bag.svg" />
+    <Content Include="images\bowl-2.png" />
+    <Content Include="images\bowl-3.png" />
+    <Content Include="images\cart.svg" />
+    <Content Include="images\couch.png" />
+    <Content Include="images\cross.svg" />
+    <Content Include="images\dots-green.svg" />
+    <Content Include="images\dots-light.svg" />
+    <Content Include="images\dots-yellow.svg" />
+    <Content Include="images\envelope-outline.svg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\img-grid-1.jpg" />
+    <Content Include="images\img-grid-2.jpg" />
+    <Content Include="images\img-grid-3.jpg" />
+    <Content Include="images\massage.png" />
+    <Content Include="images\padicure.png" />
+    <Content Include="images\person-1.jpg" />
+    <Content Include="images\person-1.png" />
+    <Content Include="images\person_1.jpg" />
+    <Content Include="images\person_2.jpg" />
+    <Content Include="images\person_3.jpg" />
+    <Content Include="images\person_4.jpg" />
+    <Content Include="images\post-1.jpg" />
+    <Content Include="images\post-2.jpg" />
+    <Content Include="images\post-3.jpg" />
+    <Content Include="images\product-1.png" />
+    <Content Include="images\product-2.png" />
+    <Content Include="images\product-3.png" />
+    <Content Include="images\return.svg" />
+    <Content Include="images\sb1.png" />
+    <Content Include="images\sb2.png" />
+    <Content Include="images\sb3.png" />
+    <Content Include="images\sb4.png" />
+    <Content Include="images\sb5.png" />
+    <Content Include="images\sb6.png" />
+    <Content Include="images\sb7.png" />
+    <Content Include="images\sb8.png" />
+    <Content Include="images\sb9.png" />
+    <Content Include="images\sofa.png" />
+    <Content Include="images\support.svg" />
+    <Content Include="images\truck.svg" />
+    <Content Include="images\user.svg" />
+    <Content Include="images\why-choose-us-img.jpg" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\cart.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\tiny-slider.js" />
+    <Content Include="locks.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="man.aspx" />
+    <Content Include="painting.aspx" />
+    <Content Include="Plumber.aspx" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\4.png" />
+    <Content Include="images\5.png" />
+    <Content Include="images\6.png" />
+    <Content Include="images\acc1.png" />
+    <Content Include="images\acc2.png" />
+    <Content Include="images\acc3.png" />
+    <Content Include="images\acc4.png" />
+    <Content Include="images\acc5.png" />
+    <Content Include="images\acc6.png" />
+    <Content Include="images\acc7.png" />
+    <Content Include="images\acc8.png" />
+    <Content Include="images\c1.png" />
+    <Content Include="images\c2.png" />
+    <Content Include="images\c3.png" />
+    <Content Include="images\cpc1.png" />
+    <Content Include="images\cpc2.png" />
+    <Content Include="images\cpc3.png" />
+    <Content Include="images\cpc4.png" />
+    <Content Include="images\e1.png" />
+    <Content Include="images\e2.png" />
+    <Content Include="images\e3.png" />
+    <Content Include="images\e4.png" />
+    <Content Include="images\e5.png" />
+    <Content Include="images\e6.png" />
+    <Content Include="images\e7.png" />
+    <Content Include="images\e8.png" />
+    <Content Include="images\e9.png" />
+    <Content Include="images\h-painting.png" />
+    <Content Include="images\h1.png" />
+    <Content Include="images\h2.png" />
+    <Content Include="images\h3.png" />
+    <Content Include="images\i1.png" />
+    <Content Include="images\i2.png" />
+    <Content Include="images\m1.png" />
+    <Content Include="images\m2.png" />
+    <Content Include="images\m3.png" />
+    <Content Include="images\m4.png" />
+    <Content Include="images\m5.png" />
+    <Content Include="images\m6.png" />
+    <Content Include="images\m7.png" />
+    <Content Include="images\m8.png" />
+    <Content Include="images\mid carsole- 1.jpg" />
+    <Content Include="images\n1.png" />
+    <Content Include="images\n2.png" />
+    <Content Include="images\n3.png" />
+    <Content Include="images\n4.png" />
+    <Content Include="images\n5.png" />
+    <Content Include="images\n6.png" />
+    <Content Include="images\n7.png" />
+    <Content Include="images\n8.png" />
+    <Content Include="images\p1.png" />
+    <Content Include="images\p2.png" />
+    <Content Include="images\p3.png" />
+    <Content Include="images\painting.png" />
+    <Content Include="images\r1.png" />
+    <Content Include="images\r2.png" />
+    <Content Include="images\r3.png" />
+    <Content Include="images\ro-coroaole.png" />
+    <Content Include="images\w1.png" />
+    <Content Include="images\w2.png" />
+    <Content Include="images\w3.png" />
+    <Content Include="images\w4.png" />
+    <Content Include="images\w5.png" />
+    <Content Include="images\w6.png" />
+    <Content Include="images\womans.png" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="Vendor\StyleSheet1.css" />
+    <Content Include="Vendor\vendor_home.aspx" />
+    <Content Include="water_purifier.aspx" />
+    <Content Include="Woman.aspx" />
+    <Content Include="thankyou.aspx" />
+    <Content Include="VendorRegister.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Activate.aspx.cs">
+      <DependentUpon>Activate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activate.aspx.designer.cs">
+      <DependentUpon>Activate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_partner.aspx.cs">
+      <DependentUpon>add_partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_partner.aspx.designer.cs">
+      <DependentUpon>add_partner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_services.aspx.cs">
+      <DependentUpon>add_services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_services.aspx.designer.cs">
+      <DependentUpon>add_services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cleaning.aspx.cs">
+      <DependentUpon>cleaning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cleaning.aspx.designer.cs">
+      <DependentUpon>cleaning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="decor.aspx.cs">
+      <DependentUpon>decor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="decor.aspx.designer.cs">
+      <DependentUpon>decor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="repair.aspx.cs">
+      <DependentUpon>repair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="repair.aspx.designer.cs">
+      <DependentUpon>repair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="locks.aspx.cs">
+      <DependentUpon>locks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="locks.aspx.designer.cs">
+      <DependentUpon>locks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="man.aspx.cs">
+      <DependentUpon>man.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="man.aspx.designer.cs">
+      <DependentUpon>man.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="painting.aspx.cs">
+      <DependentUpon>painting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painting.aspx.designer.cs">
+      <DependentUpon>painting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plumber.aspx.cs">
+      <DependentUpon>Plumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plumber.aspx.designer.cs">
+      <DependentUpon>Plumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor\Vendor.Master.cs">
+      <DependentUpon>Vendor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vendor\Vendor.Master.designer.cs">
+      <DependentUpon>Vendor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor\vendor_home.aspx.cs">
+      <DependentUpon>vendor_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vendor\vendor_home.aspx.designer.cs">
+      <DependentUpon>vendor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="water_purifier.aspx.cs">
+      <DependentUpon>water_purifier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="water_purifier.aspx.designer.cs">
+      <DependentUpon>water_purifier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Woman.aspx.cs">
+      <DependentUpon>Woman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Woman.aspx.designer.cs">
+      <DependentUpon>Woman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="thankyou.aspx.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thankyou.aspx.designer.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VendorRegister.aspx.cs">
+      <DependentUpon>VendorRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VendorRegister.aspx.designer.cs">
+      <DependentUpon>VendorRegister.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\assets\css\bootstrap.min.css.map" />
+    <Content Include="admin\assets\css\now-ui-dashboard.css.map" />
+    <Content Include="admin\assets\fonts\nucleo-license.md" />
+    <Content Include="admin\assets\fonts\nucleo-outline.eot" />
+    <Content Include="admin\assets\fonts\nucleo-outline.ttf" />
+    <Content Include="admin\assets\fonts\nucleo-outline.woff" />
+    <Content Include="admin\assets\fonts\nucleo-outline.woff2" />
+    <Content Include="admin\assets\js\now-ui-dashboard.js.map" />
+    <Content Include="admin\assets\scss\now-ui-dashboard.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\cards\_card-chart.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\cards\_card-map.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\cards\_card-plain.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\cards\_card-user.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_buttons.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_cards.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_dropdown.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_inputs.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_page-header.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_sidebar.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_transparency.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\mixins\_vendor-prefixes.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\plugins\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_alerts.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_buttons.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_cards.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_checkboxes-radio.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_dropdown.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_fixed-plugin.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_footers.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_images.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_inputs.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_misc.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_mixins.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_navbar.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_nucleo-outline.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_page-header.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_responsive.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_sidebar-and-main-panel.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_tables.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_typography.scss" />
+    <Content Include="admin\assets\scss\now-ui-dashboard\_variables.scss" />
+    <Content Include="admin\admin.Master" />
+    <None Include="packages.config" />
+    <Content Include="scss\style.scss" />
+    <Content Include="Site1.Master" />
+    <Content Include="Vendor\Vendor.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57380</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57380/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

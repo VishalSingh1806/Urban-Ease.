@@ -1,0 +1,190 @@
+06-06-2024 12.17.55 PM: Connection opened successfully.
+06-06-2024 12.17.55 PM: Vendor ID: 29
+06-06-2024 12.17.55 PM: Vendor details: Sushant Kumar, Category: Man's Care, Subcategory: Pedicure
+06-06-2024 12.17.55 PM: Service found: Pedicure                                           (ID: 55)
+06-06-2024 12.17.55 PM: Connection closed.
+06-06-2024 12.17.55 PM: Connection opened for setting vendor name.
+06-06-2024 12.17.55 PM: Vendor name set: Sushant Kumar
+06-06-2024 12.17.55 PM: Connection closed after setting vendor name.
+06-06-2024 12.17.55 PM: Connection opened for loading order history.
+06-06-2024 12.17.55 PM: Connection closed after loading order history.
+06-06-2024 12.19.52 PM: Connection opened successfully.
+06-06-2024 12.19.52 PM: Vendor ID: 28
+06-06-2024 12.19.52 PM: Vendor details: Krishna Kumar, Category: Man's Care, Subcategory: Pedicure
+06-06-2024 12.19.52 PM: Service found: Pedicure                                           (ID: 55)
+06-06-2024 12.19.52 PM: Connection closed.
+06-06-2024 12.19.52 PM: Connection opened for setting vendor name.
+06-06-2024 12.19.52 PM: Vendor name set: Krishna Kumar
+06-06-2024 12.19.52 PM: Connection closed after setting vendor name.
+06-06-2024 12.19.52 PM: Connection opened for loading order history.
+06-06-2024 12.19.52 PM: Connection closed after loading order history.
+06-06-2024 12.20.13 PM: Connection opened successfully.
+06-06-2024 12.20.13 PM: Vendor ID: 29
+06-06-2024 12.20.13 PM: Vendor details: Sushant Kumar, Category: Man's Care, Subcategory: Pedicure
+06-06-2024 12.20.13 PM: Service found: Pedicure                                           (ID: 55)
+06-06-2024 12.20.13 PM: Connection closed.
+06-06-2024 12.20.13 PM: Connection opened for setting vendor name.
+06-06-2024 12.20.13 PM: Vendor name set: Sushant Kumar
+06-06-2024 12.20.13 PM: Connection closed after setting vendor name.
+06-06-2024 12.20.13 PM: Connection opened for loading order history.
+06-06-2024 12.20.13 PM: Connection closed after loading order history.
+06-06-2024 12.22.29 PM: Connection opened successfully.
+06-06-2024 12.22.29 PM: Vendor ID: 29
+06-06-2024 12.22.29 PM: Vendor details: Sushant Kumar, Category: Man's Care, Subcategory: Pedicure
+06-06-2024 12.22.29 PM: Service found: Pedicure                                           (ID: 55)
+06-06-2024 12.22.29 PM: Connection closed.
+06-06-2024 12.22.29 PM: Connection opened for setting vendor name.
+06-06-2024 12.22.29 PM: Vendor name set: Sushant Kumar
+06-06-2024 12.22.29 PM: Connection closed after setting vendor name.
+06-06-2024 12.22.29 PM: Connection opened for loading order history.
+06-06-2024 12.22.29 PM: Connection closed after loading order history.
+06-06-2024 11.20.53 PM: Connection opened successfully.
+06-06-2024 11.20.53 PM: Vendor ID: 73
+06-06-2024 11.20.53 PM: Vendor details: Raj ., Category: Electrician, Plumber & Carpenter, Subcategory: Plumber
+06-06-2024 11.20.53 PM: Service found: Plumber                                            (ID: 99)
+06-06-2024 11.20.53 PM: Connection closed.
+06-06-2024 11.20.53 PM: Connection opened for setting vendor name.
+06-06-2024 11.20.53 PM: Vendor name set: Raj .
+06-06-2024 11.20.53 PM: Connection closed after setting vendor name.
+06-06-2024 11.20.53 PM: Connection opened for loading order history.
+06-06-2024 11.20.53 PM: Connection closed after loading order history.
+06-06-2024 11.22.22 PM: Connection opened successfully.
+06-06-2024 11.22.22 PM: Vendor ID: 73
+06-06-2024 11.22.22 PM: Vendor details: Raj ., Category: Electrician, Plumber & Carpenter, Subcategory: Plumber
+06-06-2024 11.22.22 PM: Service found: Plumber                                            (ID: 99)
+06-06-2024 11.22.22 PM: Connection closed.
+06-06-2024 11.22.22 PM: Connection opened for setting vendor name.
+06-06-2024 11.22.22 PM: Vendor name set: Raj .
+06-06-2024 11.22.22 PM: Connection closed after setting vendor name.
+06-06-2024 11.22.22 PM: Connection opened for loading order history.
+06-06-2024 11.22.22 PM: Connection closed after loading order history.
+06-06-2024 11.24.54 PM: Connection opened successfully.
+06-06-2024 11.24.54 PM: Vendor ID: 28
+06-06-2024 11.24.54 PM: Vendor details: Krishna Kumar, Category: Man's Care, Subcategory: Pedicure
+06-06-2024 11.24.54 PM: Service found: Pedicure                                           (ID: 55)
+06-06-2024 11.24.54 PM: Connection closed.
+06-06-2024 11.24.54 PM: Connection opened for setting vendor name.
+06-06-2024 11.24.54 PM: Vendor name set: Krishna Kumar
+06-06-2024 11.24.54 PM: Connection closed after setting vendor name.
+06-06-2024 11.24.54 PM: Connection opened for loading order history.
+06-06-2024 11.24.54 PM: Connection closed after loading order history.
+06-06-2024 11.33.59 PM: Connection opened successfully.
+06-06-2024 11.33.59 PM: Vendor ID: 30
+06-06-2024 11.33.59 PM: Vendor details: Rajat ., Category: Man's Care, Subcategory: Men/Kids Haircut
+06-06-2024 11.33.59 PM: Service found: Men/Kids Haircut                                   (ID: 57)
+06-06-2024 11.33.59 PM: Connection closed.
+06-06-2024 11.33.59 PM: Connection opened for setting vendor name.
+06-06-2024 11.33.59 PM: Vendor name set: Rajat .
+06-06-2024 11.33.59 PM: Connection closed after setting vendor name.
+06-06-2024 11.33.59 PM: Connection opened for loading order history.
+06-06-2024 11.33.59 PM: Connection closed after loading order history.
+06-06-2024 11.55.48 PM: Connection opened successfully.
+06-06-2024 11.55.48 PM: Vendor ID: 39
+06-06-2024 11.55.48 PM: Vendor details: Aniket ., Category: Man's Care, Subcategory: Massage
+06-06-2024 11.55.48 PM: Service found: Massage                                            (ID: 65)
+06-06-2024 11.55.48 PM: Connection closed.
+06-06-2024 11.55.48 PM: Connection opened for setting vendor name.
+06-06-2024 11.55.48 PM: Vendor name set: Aniket .
+06-06-2024 11.55.48 PM: Connection closed after setting vendor name.
+06-06-2024 11.55.48 PM: Connection opened for loading order history.
+06-06-2024 11.55.48 PM: Connection closed after loading order history.
+06-06-2024 11.58.41 PM: Connection opened successfully.
+06-06-2024 11.58.41 PM: Vendor ID: 30
+06-06-2024 11.58.41 PM: Vendor details: Rajat ., Category: Man's Care, Subcategory: Men/Kids Haircut
+06-06-2024 11.58.41 PM: Service found: Men/Kids Haircut                                   (ID: 57)
+06-06-2024 11.58.41 PM: Connection closed.
+06-06-2024 11.58.41 PM: Connection opened for setting vendor name.
+06-06-2024 11.58.41 PM: Vendor name set: Rajat .
+06-06-2024 11.58.41 PM: Connection closed after setting vendor name.
+06-06-2024 11.58.41 PM: Connection opened for loading order history.
+06-06-2024 11.58.41 PM: Connection closed after loading order history.
+07-06-2024 12.01.04 AM: Connection opened successfully.
+07-06-2024 12.01.04 AM: Vendor ID: 39
+07-06-2024 12.01.04 AM: Vendor details: Aniket ., Category: Man's Care, Subcategory: Massage
+07-06-2024 12.01.04 AM: Service found: Massage                                            (ID: 65)
+07-06-2024 12.01.04 AM: Connection closed.
+07-06-2024 12.01.04 AM: Connection opened for setting vendor name.
+07-06-2024 12.01.04 AM: Vendor name set: Aniket .
+07-06-2024 12.01.04 AM: Connection closed after setting vendor name.
+07-06-2024 12.01.04 AM: Connection opened for loading order history.
+07-06-2024 12.01.04 AM: Connection closed after loading order history.
+07-06-2024 12.02.55 AM: Connection opened successfully.
+07-06-2024 12.02.55 AM: Vendor ID: 39
+07-06-2024 12.02.55 AM: Vendor details: Aniket ., Category: Man's Care, Subcategory: Massage
+07-06-2024 12.02.55 AM: Service found: Massage                                            (ID: 65)
+07-06-2024 12.02.55 AM: Connection closed.
+07-06-2024 12.02.55 AM: Connection opened for setting vendor name.
+07-06-2024 12.02.55 AM: Vendor name set: Aniket .
+07-06-2024 12.02.55 AM: Connection closed after setting vendor name.
+07-06-2024 12.02.55 AM: Connection opened for loading order history.
+07-06-2024 12.02.55 AM: Connection closed after loading order history.
+07-06-2024 12.19.07 AM: Connection opened successfully.
+07-06-2024 12.19.07 AM: Vendor ID: 29
+07-06-2024 12.19.07 AM: Vendor details: Sushant Kumar, Category: Man's Care, Subcategory: Pedicure
+07-06-2024 12.19.07 AM: Service found: Pedicure                                           (ID: 55)
+07-06-2024 12.19.07 AM: Connection closed.
+07-06-2024 12.19.07 AM: Connection opened for setting vendor name.
+07-06-2024 12.19.07 AM: Vendor name set: Sushant Kumar
+07-06-2024 12.19.07 AM: Connection closed after setting vendor name.
+07-06-2024 12.19.07 AM: Connection opened for loading order history.
+07-06-2024 12.19.07 AM: Connection closed after loading order history.
+07-06-2024 12.22.26 AM: Connection opened successfully.
+07-06-2024 12.22.26 AM: Vendor ID: 29
+07-06-2024 12.22.26 AM: Vendor details: Sushant Kumar, Category: Man's Care, Subcategory: Pedicure
+07-06-2024 12.22.26 AM: Service found: Pedicure                                           (ID: 55)
+07-06-2024 12.22.26 AM: Connection closed.
+07-06-2024 12.22.26 AM: Connection opened for setting vendor name.
+07-06-2024 12.22.26 AM: Vendor name set: Sushant Kumar
+07-06-2024 12.22.26 AM: Connection closed after setting vendor name.
+07-06-2024 12.22.26 AM: Connection opened for loading order history.
+07-06-2024 12.22.26 AM: Connection closed after loading order history.
+07-06-2024 9.46.44 AM: Connection opened successfully.
+07-06-2024 9.46.44 AM: Vendor ID: 16
+07-06-2024 9.46.44 AM: Vendor details: Anika Jha, Category: Woman's Section, Subcategory: Pedicure
+07-06-2024 9.46.44 AM: Service found: Pedicure                                           (ID: 43)
+07-06-2024 9.46.44 AM: Connection closed.
+07-06-2024 9.46.44 AM: Connection opened for setting vendor name.
+07-06-2024 9.46.44 AM: Vendor name set: Anika Jha
+07-06-2024 9.46.44 AM: Connection closed after setting vendor name.
+07-06-2024 9.46.44 AM: Connection opened for loading order history.
+07-06-2024 9.46.44 AM: Connection closed after loading order history.
+07-06-2024 9.49.07 AM: Connection opened successfully.
+07-06-2024 9.49.07 AM: Vendor ID: 17
+07-06-2024 9.49.07 AM: Vendor details: Shivani Agarwal, Category: Woman's Section, Subcategory: Pedicure
+07-06-2024 9.49.07 AM: Service found: Pedicure                                           (ID: 43)
+07-06-2024 9.49.07 AM: Connection closed.
+07-06-2024 9.49.07 AM: Connection opened for setting vendor name.
+07-06-2024 9.49.07 AM: Vendor name set: Shivani Agarwal
+07-06-2024 9.49.07 AM: Connection closed after setting vendor name.
+07-06-2024 9.49.07 AM: Connection opened for loading order history.
+07-06-2024 9.49.07 AM: Connection closed after loading order history.
+07-06-2024 9.50.08 AM: Connection opened successfully.
+07-06-2024 9.50.08 AM: Vendor ID: 18
+07-06-2024 9.50.08 AM: Vendor details: Shruti Choudhary, Category: Woman's Section, Subcategory: Manicure
+07-06-2024 9.50.08 AM: Service found: Manicure                                           (ID: 45)
+07-06-2024 9.50.08 AM: Connection closed.
+07-06-2024 9.50.08 AM: Connection opened for setting vendor name.
+07-06-2024 9.50.08 AM: Vendor name set: Shruti Choudhary
+07-06-2024 9.50.08 AM: Connection closed after setting vendor name.
+07-06-2024 9.50.08 AM: Connection opened for loading order history.
+07-06-2024 9.50.08 AM: Connection closed after loading order history.
+07-06-2024 9.50.53 AM: Connection opened successfully.
+07-06-2024 9.50.53 AM: Vendor ID: 19
+07-06-2024 9.50.53 AM: Vendor details: Kyra Shah, Category: Woman's Section, Subcategory: Manicure
+07-06-2024 9.50.53 AM: Service found: Manicure                                           (ID: 45)
+07-06-2024 9.50.53 AM: Connection closed.
+07-06-2024 9.50.53 AM: Connection opened for setting vendor name.
+07-06-2024 9.50.53 AM: Vendor name set: Kyra Shah
+07-06-2024 9.50.53 AM: Connection closed after setting vendor name.
+07-06-2024 9.50.53 AM: Connection opened for loading order history.
+07-06-2024 9.50.53 AM: Connection closed after loading order history.
+10-06-2024 8.49.04 AM: Connection opened successfully.
+10-06-2024 8.49.04 AM: Vendor ID: 40
+10-06-2024 8.49.04 AM: Vendor details: Vivek Joshi, Category: repair, Subcategory: Cooler Repair
+10-06-2024 8.49.04 AM: Service found: Cooler Repair                                      (ID: 67)
+10-06-2024 8.49.04 AM: Connection closed.
+10-06-2024 8.49.04 AM: Connection opened for setting vendor name.
+10-06-2024 8.49.04 AM: Vendor name set: Vivek Joshi
+10-06-2024 8.49.04 AM: Connection closed after setting vendor name.
+10-06-2024 8.49.04 AM: Connection opened for loading order history.
+10-06-2024 8.49.04 AM: Connection closed after loading order history.

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\project\\Urban Ease 2\\Urban Ease 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|D:\\project\\Urban Ease 2\\Urban Ease 2\\urban ease 2\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|solutionrelative:urban ease 2\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|d:\\project\\urban ease 2\\urban ease 2\\urban ease 2\\woman.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|solutionrelative:urban ease 2\\woman.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|D:\\project\\Urban Ease 2\\Urban Ease 2\\urban ease 2\\cleaning.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{9839190C-145C-461E-961A-01FBE919D6BE}|Urban Ease 2\\Urban Ease 2.csproj|solutionrelative:urban ease 2\\cleaning.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Woman.aspx",
+              "DocumentMoniker": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\Woman.aspx",
+              "RelativeDocumentMoniker": "Urban Ease 2\\Woman.aspx",
+              "ToolTip": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\Woman.aspx",
+              "RelativeToolTip": "Urban Ease 2\\Woman.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-11T06:32:39.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cleaning.aspx",
+              "DocumentMoniker": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\cleaning.aspx",
+              "RelativeDocumentMoniker": "Urban Ease 2\\cleaning.aspx",
+              "ToolTip": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\cleaning.aspx",
+              "RelativeToolTip": "Urban Ease 2\\cleaning.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-10T06:05:47.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\Home.aspx",
+              "RelativeDocumentMoniker": "Urban Ease 2\\Home.aspx",
+              "ToolTip": "D:\\project\\Urban Ease 2\\Urban Ease 2\\Urban Ease 2\\Home.aspx",
+              "RelativeToolTip": "Urban Ease 2\\Home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-20T18:06:42.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

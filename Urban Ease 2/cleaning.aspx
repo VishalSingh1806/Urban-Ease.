@@ -1,0 +1,351 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="cleaning.aspx.cs" Inherits="Urban_Ease_2.cleaning" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- Additional CSS for better styling -->
+    <style>
+        .card-body a:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-body p {
+            transition: color 0.2s;
+        }
+
+        .card-body a:hover p {
+            color: #000;
+        }
+    </style>
+
+    <!-- Start Main Content Area -->
+    <div class="container">
+        <div class="row">
+            <!-- Left Sidebar with Grid-like Cards -->
+            <div class="col-md-3 mb-4" id="sidebar" style="margin-top: 40px; margin-left: -70px; margin-right: 40px">
+                <div class="card border-0 shadow" style="border-radius: 15px; overflow: hidden; position: sticky; top: 80px;">
+                    <div class="card-body" style="background-color: #f8f9fa; border-radius: 8px; padding: 20px;">
+                        <!-- Heading above the grid -->
+                        <h5 class="card-title" style="font-weight: bold; color: #333; font-size: 24px; margin-bottom: 10px;">Cleaning & Pestcontrol</h5>
+                        <hr style="margin-bottom: 20px; border-top: 2px solid #333;" />
+                        <h6 class="card-title" style="font-weight: bold; color: #333; font-size: 18px; margin-bottom: 10px;">Cleaning</h6>
+                        <div class="row gx-3 gy-3">
+                            <!-- Image Buttons -->
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/c1.png" class="img-fluid rounded" alt="Bathroom & Kitchen cleaning" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; white-space: nowrap; line-height: 1.4; overflow-wrap: break-word; overflow: hidden; text-overflow: ellipsis; font-size: 14px; margin-top: 8px;">Bathroom & Kitchen cleaning</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/c2.png" class="img-fluid rounded" alt="Full House Cleaning" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; font-size: 14px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 8px;">Full House Cleaning</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/c3.png" class="img-fluid rounded" alt="Sofa & Carpet Cleaning" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; font-size: 14px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 8px;">Sofa & Carpet Cleaning</p>
+                                </a>
+                            </div>
+                        </div>
+                        <h6 class="card-title" style="font-weight: bold; color: #333; font-size: 18px; margin-top: 20px; margin-bottom: 10px;">Pest Control</h6>
+                        <hr style="margin-bottom: 20px; border-top: 2px solid #333;" />
+                        <div class="row gx-3 gy-3">
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/p1.png" class="img-fluid rounded" alt="General Pest Control" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; font-size: 14px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 8px;">General Pest Control</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/p2.png" class="img-fluid rounded" alt="Termite Control" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; font-size: 14px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 8px;">Termite Control</p>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="d-block text-center" style="text-decoration: none;">
+                                    <img src="images/p3.png" class="img-fluid rounded" alt="Bed Bugs Control" style="max-width: 80%; height: auto; transition: transform 0.2s;">
+                                    <p style="font-weight: 500; color: #555; text-align: center; font-size: 14px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin-top: 8px;">Bed Bugs Control</p>
+                                </a>
+                            </div>
+                        </div>
+                        <hr style="margin-bottom: 20px; border-top: 2px solid #333;" />
+                        <div class="col-12">
+                            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                                    <span style="color: green; margin-right: 10px;">✓</span> Verified Professionals
+                                </li>
+                                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                                    <span style="color: green; margin-right: 10px;">✓</span> Hassle-Free Booking
+                                </li>
+                                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                                    <span style="color: green; margin-right: 10px;">✓</span> Transparent Pricing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area with Grid System -->
+            <div class="col-md-9 order-md-2">
+                <!-- Carousel for pictures -->
+                <div id="pictureCarousel" class="carousel slide mb-4 mt-4" data-bs-ride="carousel" data-interval="3000" style="border-radius: 15px; overflow: hidden;">
+                    <div class="carousel-inner">
+                        <!-- Picture Items (sample) -->
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/w_873,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1695987154340-42756a.jpeg" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/w_873,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1695987133610-bd4a37.jpeg" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/w_873,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1695987140182-bfbb84.jpeg" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/w_873,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1695987349177-28ce54.jpeg" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_category/w_873,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1695987159239-a651c6.jpeg" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Image 2">
+                        </div>
+
+                        <!-- Add more picture items here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#pictureCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#pictureCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Grid system for sidebars -->
+                <div class="row">
+                    <!-- Empty Area -->
+                    <div class="col-md-8">
+                        <!-- This area is intentionally left empty for your additional content -->
+                        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                    </div>
+                    <!-- Right Sidebar -->
+                    <div class="col-md-4 mb-4" style="margin-top: 40px;">
+                        <div class="card border-0 shadow" style="border-radius: 15px; overflow: hidden; position: sticky; top: 80px;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="font-weight: bold; color: #333;">Cart</h5>
+                                <hr style="margin-bottom: 10px" />
+                                <div id="cart-sidebar">
+                                    <div id="empty-cart-message" style="display: none;">
+                                        <img class="img-fluid mx-auto d-block" src="images/shopping-cart-pn.png" style="width: 90px; height: 90px;" alt="Cart Image" />
+                                        <p class="card-title">No items in your cart</p>
+                                    </div>
+                                    <!-- Cart items will be dynamically populated here -->
+                                    <table class="table site-block-order-table mb-5">
+                                        <tbody id="orderSummaryBody">
+                                            <!-- Order summary items will be dynamically added here -->
+                                        </tbody>
+                                    </table>
+                                    <!-- Button to show total amount and redirect to checkout -->
+                                    <button id="checkoutButton" class="btn btn-primary" style="margin-top: 20px;" onclick="redirectToCheckout(event)">
+                                        ₹<span style="margin-right: 90px !important;" id="totalAmount">0.00</span>Total
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- New Right Sidebar (Duplicate) -->
+<div class="card border-0 shadow mt-4" style="border-radius: 15px; overflow: hidden; position: sticky; top: 380px;">
+    <div class="card-body" style="position: relative;">
+        <!-- Image in the top-right corner -->
+        <img src="images/promiss.jpg" class="img-fluid" style="position: absolute; top: 10px; right: 10px; width: 50px; height: 50px;">
+
+        <h2 class="card-title" style="font-weight: bold; color: #333; font-size: 28px; margin-bottom: 10px; text-align: left;">UE Promise</h2>
+        <hr style="margin-bottom: 20px; border-top: 2px solid #333;" />
+        <div class="col-12">
+            <ul style="list-style-type: none; padding: 0; margin: 0; text-align: left;">
+                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                    <span style="color: green; margin-right: 10px;">✓</span>Booking Convenience
+                </li>
+                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                    <span style="color: green; margin-right: 10px;">✓</span>Clear Pricing
+                </li>
+                <li style="font-weight: bold; color: #333; font-size: 16px; margin-bottom: 8px;">
+                    <span style="color: green; margin-right: 10px;">✓</span>Verified Experts
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content Area -->
+
+    <script>
+        function redirectToCheckout(event) {
+            event.preventDefault(); // Prevent default form submission or link behavior
+            console.log('Redirecting to checkout...');
+            window.location.href = 'checkout.aspx';
+        }
+
+        // Function to add item to cart
+        function addToCart(itemId, itemName, itemPrice) {
+            console.log('Adding item to cart:', itemId, itemName, itemPrice);
+
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartPrices = JSON.parse(localStorage.getItem('cartPrices')) || {};
+
+            if (!cartItems.includes(itemId.toString())) {
+                cartItems.push(itemId.toString());
+            }
+
+            cartPrices[itemId.toString()] = { name: itemName, price: itemPrice };
+
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            localStorage.setItem('cartPrices', JSON.stringify(cartPrices));
+
+            console.log('Item added to cart:', itemId);
+
+            // After adding item to cart, update the cart sidebar
+            updateCartSidebar();
+        }
+
+        // Function to remove item from cart
+        function removeFromCart(itemId) {
+            console.log('Removing item from cart:', itemId);
+
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartPrices = JSON.parse(localStorage.getItem('cartPrices')) || {};
+
+            cartItems = cartItems.filter(item => item !== itemId.toString());
+            delete cartPrices[itemId.toString()];
+
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            localStorage.setItem('cartPrices', JSON.stringify(cartPrices));
+
+            console.log('Item removed from cart:', itemId);
+
+            // After removing item from cart, update the cart sidebar
+            updateCartSidebar();
+        }
+
+        // Function to update the right sidebar with cart details
+        function updateCartSidebar() {
+            try {
+                let cartPrices = JSON.parse(localStorage.getItem('cartPrices')) || {};
+                let orderSummaryTable = document.getElementById('orderSummaryBody');
+                let emptyCartMessage = document.getElementById('empty-cart-message');
+                let checkoutButton = document.getElementById('checkoutButton');
+                let totalAmountElement = document.getElementById('totalAmount');
+
+                if (Object.keys(cartPrices).length === 0) {
+                    // If cart is empty, display a message and hide the checkout button
+                    emptyCartMessage.style.display = 'block';
+                    orderSummaryTable.innerHTML = '';
+                    checkoutButton.style.display = 'none';
+                } else {
+                    // If cart has items, populate the order summary table and show the checkout button
+                    emptyCartMessage.style.display = 'none';
+                    orderSummaryTable.innerHTML = '';
+
+                    let subtotalAmount = 0;
+                    for (let itemId in cartPrices) {
+                        if (Object.prototype.hasOwnProperty.call(cartPrices, itemId)) {
+                            let item = cartPrices[itemId];
+                            let row = orderSummaryTable.insertRow();
+                            let nameCell = row.insertCell(0);
+                            let priceCell = row.insertCell(1);
+                            let removeCell = row.insertCell(2);
+
+                            nameCell.textContent = item.name;
+                            priceCell.textContent = '₹' + item.price.toFixed(2);
+
+                            let removeIcon = document.createElement('i');
+                            removeIcon.className = 'fas fa-times text-danger';
+                            removeIcon.style.cursor = 'pointer';
+                            removeIcon.onclick = function () { removeFromCart(itemId); };
+                            removeCell.appendChild(removeIcon);
+
+                            subtotalAmount += item.price;
+                        }
+                    }
+
+                    // Update subtotal amount and show the checkout button
+                    totalAmountElement.textContent = subtotalAmount.toFixed(2);
+                    checkoutButton.style.display = 'block';
+                }
+
+                // Duplicate the sidebar functionality for the second sidebar
+                let orderSummaryTable2 = document.getElementById('orderSummaryBody2');
+                let emptyCartMessage2 = document.getElementById('empty-cart-message-2');
+                let checkoutButton2 = document.getElementById('checkoutButton2');
+                let totalAmountElement2 = document.getElementById('totalAmount2');
+
+                if (Object.keys(cartPrices).length === 0) {
+                    emptyCartMessage2.style.display = 'block';
+                    orderSummaryTable2.innerHTML = '';
+                    checkoutButton2.style.display = 'none';
+                } else {
+                    emptyCartMessage2.style.display = 'none';
+                    orderSummaryTable2.innerHTML = '';
+
+                    let subtotalAmount2 = 0;
+                    for (let itemId in cartPrices) {
+                        if (Object.prototype.hasOwnProperty.call(cartPrices, itemId)) {
+                            let item = cartPrices[itemId];
+                            let row2 = orderSummaryTable2.insertRow();
+                            let nameCell2 = row2.insertCell(0);
+                            let priceCell2 = row2.insertCell(1);
+                            let removeCell2 = row2.insertCell(2);
+
+                            nameCell2.textContent = item.name;
+                            priceCell2.textContent = '₹' + item.price.toFixed(2);
+
+                            let removeIcon2 = document.createElement('i');
+                            removeIcon2.className = 'fas fa-times text-danger';
+                            removeIcon2.style.cursor = 'pointer';
+                            removeIcon2.onclick = function () { removeFromCart(itemId); };
+                            removeCell2.appendChild(removeIcon2);
+
+                            subtotalAmount2 += item.price;
+                        }
+                    }
+
+                    totalAmountElement2.textContent = subtotalAmount2.toFixed(2);
+                    checkoutButton2.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error updating cart sidebar:', error);
+            }
+        }
+
+        // Function to bind click event to dynamically added 'Add' buttons
+        function bindAddToCartButtons() {
+            const addToCartButtons = document.querySelectorAll('.btn-add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const itemId = parseInt(button.getAttribute('data-itemId'));
+                    const itemName = button.getAttribute('data-itemName');
+                    const itemPrice = parseFloat(button.getAttribute('data-itemPrice'));
+
+                    console.log('Clicked Item:', itemId, itemName, itemPrice);
+
+                    if (!isNaN(itemId) && itemName && !isNaN(itemPrice)) {
+                        addToCart(itemId, itemName, itemPrice);
+                    } else {
+                        console.log('Invalid item details:', itemId, itemName, itemPrice);
+                    }
+                });
+            });
+        }
+
+        // Call bindAddToCartButtons when the page finishes loading
+        window.addEventListener('load', bindAddToCartButtons);
+
+        // Call updateCartSidebar function once on page load to initially populate the cart sidebar
+        window.addEventListener('load', updateCartSidebar);
+    </script>
+</asp:Content>

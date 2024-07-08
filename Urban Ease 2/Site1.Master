@@ -1,0 +1,436 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Urban_Ease_2.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+    <title>Urban Ease</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .custom-navbar {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 1020; /* Make sure it sits on top of other elements */
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+            .dropdown-menu .dropdown-item {
+                padding: 10px 20px;
+                transition: background-color 0.2s, color 0.2s;
+            }
+
+                .dropdown-menu .dropdown-item:hover {
+                    background-color: #f8f9fa;
+                    color: #343a40;
+                }
+
+        .navbar-nav .nav-item .nav-link img {
+            transition: transform 0.3s;
+        }
+
+            .navbar-nav .nav-item .nav-link img:hover {
+                transform: scale(1.1);
+            }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark navbar-sticky">
+        <div class="container">
+            <a class="navbar-brand" href="Home.aspx">Urban Ease<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <form class="d-flex ms-auto">
+                    <div class="position-relative">
+                        <input class="form-control me-2" type="search" placeholder="Fetching location..." aria-label="Search" id="search-input" readonly>
+                        <div id="suggestions-container" class="suggestions" style="position: absolute; top: 100%; left: 0; right: 0; display: none; background-color: #fff; border-radius: 0 0 5px 5px; z-index: 1000;"></div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto" runat="server">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                            <img src="images/profile.png" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" id="profileButton" runat="server" onserverclick="showProfileModal">Profile</a></li>
+                            <li><a class="dropdown-item" href="#" id="loginOption" runat="server" onclick="openAuthModal();">Log In/Sign Up</a></li>
+                            <li><a class="dropdown-item" href="#" id="logoutOption" runat="server" onclick="logout()">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <form id="form1" runat="server">
+        <!-- ScriptManager -->
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <!-- Auth Modal -->
+        <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="authModalLabel">Authentication</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Login Form -->
+                        <div id="loginForm">
+                            <div class="form-group mt-3">
+                                <asp:TextBox type="text" class="form-control mb-4" ID="username" placeholder="Username" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:TextBox type="password" class="form-control" ID="Lpassword" placeholder="Password" runat="server"></asp:TextBox>
+                                <span toggle="#password-field" class="fa fa-fw field-icon toggle-password fa-eye"></span>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-50 text-md-right">
+                                    <a href="#" onclick="showForgotPasswordForm(); return false;">Forgot Password</a>
+                                    <asp:Label ID="Label1" runat="server" CssClass="text-danger"></asp:Label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <asp:Button type="submit" ID="Login" OnClick="Login_Click" class="form-control btn btn-primary rounded submit px-3" runat="server" Text="Log In" />
+                            </div>
+                            <div class="form-group text-center">
+                                <p>Not a member? <a href="#" onclick="showSignUpForm(); return false;">Sign Up</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Forgot Password Form -->
+                        <div id="forgotPasswordForm" style="display: none;">
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <div class="form-group mt-3">
+                                        <asp:TextBox ID="txtForgotPasswordEmail" runat="server" CssClass="form-control mb-3" placeholder="Enter your email"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Button ID="btnForgotPassword" runat="server" Text="Send OTP" CssClass="btn btn-primary btn-block" OnClick="btnForgotPassword_Click" />
+                                    </div>
+                                    <asp:Label ID="lblForgotPasswordMessage" runat="server" CssClass="text-danger mt-3" Visible="false"></asp:Label>
+                                    <div class="form-group mt-3">
+                                        <asp:TextBox ID="txtOTP" runat="server" CssClass="form-control mb-3" placeholder="Enter OTP" Visible="false"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Button ID="btnValidateOTP" runat="server" Text="Validate OTP" CssClass="btn btn-primary btn-block" OnClick="btnValidateOTP_Click" Visible="false" />
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <asp:TextBox ID="txtNewPassword" runat="server" CssClass="form-control mb-3" placeholder="Enter new password" Visible="false"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control mb-3" placeholder="Confirm new password" Visible="false"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Button ID="btnResetPassword" runat="server" Text="Reset Password" CssClass="btn btn-primary btn-block" OnClick="btnResetPassword_Click" Visible="false" />
+                                    </div>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <div class="form-group text-center">
+                                <p>Remembered your password? <a href="#" onclick="showLoginForm(); return false;">Log In</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div id="signUpForm" style="display: none;">
+                            <div class="form-group mt-3">
+                                <asp:TextBox type="text" class="form-control mb-4" ID="firstName" placeholder="First Name" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group mt-3">
+                                <asp:TextBox type="text" class="form-control mb-4" ID="lastName" placeholder="Last Name" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group mt-3">
+                                <asp:TextBox type="email" class="form-control mb-4" ID="email" placeholder="Email" runat="server"></asp:TextBox>
+                            </div>
+                            <asp:Label ID="lblErrorMsg" runat="server" Text=""></asp:Label>
+                            <div class="form-group mt-3">
+                                <asp:TextBox type="number" MaxLength="10" class="form-control mb-4" ID="number" placeholder="Number" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:TextBox type="password" class="form-control mb-4" ID="password" placeholder="Password" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:TextBox type="password" class="form-control mb-4" ID="confirmPassword" placeholder="Confirm Password" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Button type="submit" class="form-control btn btn-primary rounded submit px-3" ID="signup" OnClick="signup_Click" runat="server" Text="Sign Up" />
+                            </div>
+                            <div class="form-group text-center">
+                                <p>Already a member? <a href="#" onclick="showLoginForm(); return false;">Log In</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <!-- Profile Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="modal-dialog modal-lg d-flex justify-content-center align-items-center" style="background-color: #fff; border-radius: 10px;">
+                <div class="modal-content" style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); border: none;">
+                    <div class="modal-header" style="background-color: #17a2b8; border-radius: 10px 10px 0 0; color: #fff;">
+                        <h5 class="modal-title" id="profileModalLabel">Profile Details</h5>
+                    </div>
+                    <div class="modal-body" style="padding: 20px;">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-3 text-center mb-3">
+                                <!-- Profile Picture -->
+                                <img src="images/person-1.jpg" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%;">
+                            </div>
+                            <div class="col-md-9">
+                                <!-- User Details -->
+                                <div class="mb-3">
+                                    <asp:Label ID="profileFirstName" runat="server" Text="" Style="font-weight: bold; font-style: italic;" />
+                                </div>
+                                <div class="mb-3">
+                                    <asp:Label ID="profileEmail" runat="server" Text="" Style="font-weight: bold; font-style: italic;" />
+                                </div>
+                                <div class="mb-3">
+                                    <asp:Label ID="profileNumber" runat="server" Text="" Style="font-weight: bold; font-style: italic;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 style="color: #333;">Order Details</h5>
+                            <asp:GridView ID="orderDetailsGridView" runat="server" AutoGenerateColumns="false" CssClass="table table-striped">
+                                <Columns>
+                                    <asp:BoundField DataField="ProductNames" HeaderText="Products Purchased" ItemStyle-Width="40%" />
+                                    <asp:BoundField DataField="TotalPrice" HeaderText="Total Price" DataFormatString="{0:C}" ItemStyle-Width="20%" />
+                                    <asp:BoundField DataField="OrderDate" HeaderText="Order Date" DataFormatString="{0:yyyy-MM-dd}" ItemStyle-Width="20%" />
+                                </Columns>
+                            </asp:GridView>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Start Footer Section -->
+    <footer class="footer-section" id="footer">
+        <div class="container relative">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Urban Ease<span>.</span></a></div>
+                    <p class="mb-4">Discover the essence of urban living with Urban Ease. From expert home services to personalized solutions, we're committed to enhancing your lifestyle. Experience convenience, comfort, and community like never before. Connect with us today and unlock the potential of city living with ease.</p>
+                    <ul class="list-unstyled custom-social">
+                        <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="about.aspx">About us</a></li>
+                                <li><a href=#>Services</a></li>
+                                <li><a href=#>Blog</a></li>
+                                <li><a href="contact.aspx">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="checkout.aspx">Cart</a></li>
+                                <li><a href="#">Knowledge base</a></li>
+                                <li><a href="#">Live chat</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="VendorRegister.aspx">Jobs</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+        function openAuthModal() {
+            $('#authModal').modal('show');
+        }
+
+        function logout() {
+            window.location.href = 'logout.aspx';
+        }
+
+        function showProfileModal() {
+            $('#profileModal').modal('show');
+        }
+
+        function showForgotPasswordForm() {
+            $('#loginForm').hide();
+            $('#signUpForm').hide();
+            $('#forgotPasswordForm').show();
+        }
+
+        function showLoginForm() {
+            $('#forgotPasswordForm').hide();
+            $('#signUpForm').hide();
+            $('#loginForm').show();
+        }
+
+        function showSignUpForm() {
+            $('#loginForm').hide();
+            $('#forgotPasswordForm').hide();
+            $('#signUpForm').show();
+        }
+
+        function fetchLocation(lat, lng) {
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`)
+                .then(response => response.json())
+                .then(data => {
+                    let addressComponents = [];
+                    if (data.address) {
+                        if (data.address.road) addressComponents.push(data.address.road);
+                        if (data.address.neighbourhood) addressComponents.push(data.address.neighbourhood);
+                        if (data.address.city) {
+                            addressComponents.push(data.address.city);
+                        } else if (data.address.town) {
+                            addressComponents.push(data.address.town);
+                        } else if (data.address.village) {
+                            addressComponents.push(data.address.village);
+                        }
+                        if (data.address.state) addressComponents.push(data.address.state);
+                        if (data.address.postcode) addressComponents.push(data.address.postcode);
+                    }
+                    const detailedAddress = addressComponents.join(", ");
+                    document.getElementById('search-input').value = detailedAddress || "Detailed Address Not Found";
+                })
+                .catch(error => {
+                    console.log("Error fetching location data:", error);
+                    document.getElementById('search-input').value = "Error Fetching Location";
+                });
+        }
+
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    fetchLocation(lat, lng);
+                }, function (error) {
+                    console.log("Geolocation error: ", error);
+                    document.getElementById('search-input').value = "Location Access Denied";
+                });
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+                document.getElementById('search-input').value = "Geolocation Not Supported";
+            }
+        }
+
+        function fetchIPLocation() {
+            fetch('https://ipinfo.io/json?token=YOUR_IPINFO_API_KEY')
+                .then(response => response.json())
+                .then(data => {
+                    const [lat, lon] = data.loc.split(',');
+                    fetchLocation(lat, lon);
+                })
+                .catch(error => {
+                    console.log("Error fetching IP location data:", error);
+                    document.getElementById('search-input').value = "Error Fetching IP Location";
+                });
+        }
+
+        window.onload = function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    fetchLocation(lat, lng);
+                }, function (error) {
+                    console.log("Geolocation error: ", error);
+                    fetchIPLocation();
+                });
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+                fetchIPLocation();
+            }
+        };
+    </script>
+    <script>
+        // Open profile modal when profile button is clicked
+        $(document).ready(function () {
+            // Close the authentication modal when the page is loaded or refreshed
+            $('#authModal').modal('hide');
+
+            // Close the profile modal when the page is loaded or refreshed
+            $('#profileModal').modal('hide');
+        });
+    </script>
+</body>
+</html>
